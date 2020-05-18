@@ -35,3 +35,12 @@ deb-src http://nginx.org/packages/ubuntu/ bionic nginx
 
 sudo apt-get install nginx
 ```
+install acl
+```
+sudo apt install acl
+```
+assign rights to user
+```
+sudo setfacl -m u:djangoapp:rwx /etc/nginx/*
+sudo setfacl -m u:djangoapp:rwx /etc/nginx/conf.d/*
+```
