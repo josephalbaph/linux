@@ -32,5 +32,6 @@ deb-src https://nginx.org/packages/mainline/ubuntu/ bionic nginx
 sudo nano /etc/apt/sources.list.d/nginx.list
 deb [arch=amd64] http://nginx.org/packages/ubuntu/ bionic nginx
 deb-src http://nginx.org/packages/ubuntu/ bionic nginx
-```
 
+sudo apt-get install nginx
+```
