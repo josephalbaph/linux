@@ -1,5 +1,7 @@
 ```
 sudo snap install microk8s --classic --channel=1.18/stable 
+sudo usermod -a -G microk8s erpjosephalba
+sudo chown -f -R erpjosephalba ~/.kube
 sudo microk8s.status
 microk8s.kubectl get nodes
 sudo snap alias microk8s.kubectl kubectl
