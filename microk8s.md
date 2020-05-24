@@ -5,6 +5,7 @@ sudo chown -f -R erpjosephalba ~/.kube
 sudo microk8s.status
 microk8s.kubectl get nodes
 sudo snap alias microk8s.kubectl kubectl
+sudo snap alias microk8s.helm helm
 sudo microk8s.enable dns dashboard ingress 
 sudo microk8s.kubectl proxy --accept-hosts=.* --address=0.0.0.0 & 
 sudo microk8s.kubectl -n kube-system edit deploy kubernetes-dashboard -o yaml 
